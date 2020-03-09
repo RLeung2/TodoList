@@ -1,0 +1,148 @@
+{
+    "lists": [
+        {
+            "name": "Things I am Never Gonna Do",
+            "owner": "Rick Astley",
+            "items": [
+                {
+                    "description": "Give You Up",
+                    "due_date": "2019-09-30",
+                    "assigned_to": "Rick",
+                    "completed": true
+                },
+                {
+                    "description": "Say Goodbye",
+                    "due_date": "2019-10-15",
+                    "assigned_to": "Rick",
+                    "completed": false
+                },
+                {
+                    "description": "Make You Cry",
+                    "due_date": "2019-12-30",
+                    "assigned_to": "Bob",
+                    "completed": false
+                }
+            ]
+        },
+        {
+            "name": "House Repairs",
+            "owner": "Bob Vila",
+            "items": [
+                {
+                    "description": "Repair Leaky Kitchen Sink",
+                    "due_date": "2019-07-11",
+                    "assigned_to": "Rick",
+                    "completed": true
+                },
+                {
+                    "description": "Fix Leak in Roof",
+                    "due_date": "2019-10-15",
+                    "assigned_to": "Jane",
+                    "completed": false
+                },
+                {
+                    "description": "Paint Interior",
+                    "due_date": "2019-11-11",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "Plant Flowers",
+                    "due_date": "2019-08-17",
+                    "assigned_to": "Ryan",
+                    "completed": true
+                },
+                {
+                    "description": "Repair Front Door",
+                    "due_date": "2019-10-31",
+                    "assigned_to": "Glenda",
+                    "completed": false
+                }
+            ]
+        },
+        {
+            "name": "Courses to Take",
+            "owner": "Joe Student",
+            "items": [
+                {
+                    "description": "CSE 114",
+                    "due_date": "2018-12-31",
+                    "assigned_to": "Joe",
+                    "completed": true
+                },
+                {
+                    "description": "CSE 215",
+                    "due_date": "2018-12-31",
+                    "assigned_to": "Joe",
+                    "completed": true
+                },
+                {
+                    "description": "AMS 301",
+                    "due_date": "2018-12-31",
+                    "assigned_to": "Joe",
+                    "completed": true
+                },
+                {
+                    "description": "CSE 214",
+                    "due_date": "2019-05-31",
+                    "assigned_to": "Joe",
+                    "completed": true
+                },
+                {
+                    "description": "AMS 310",
+                    "due_date": "2019-05-31",
+                    "assigned_to": "Joe",
+                    "completed": true
+                },
+                {
+                    "description": "CSE 216",
+                    "due_date": "2019-12-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "CSE 220",
+                    "due_date": "2019-12-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "CSE 316",
+                    "due_date": "2020-05-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "CSE 303",
+                    "due_date": "2020-05-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "CSE 380",
+                    "due_date": "2020-05-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "CSE 373",
+                    "due_date": "2020-12-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "CSE 381",
+                    "due_date": "2020-12-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                },
+                {
+                    "description": "CSE 416",
+                    "due_date": "2020-12-31",
+                    "assigned_to": "Joe",
+                    "completed": false
+                }
+            ]
+        }
+    ]
+}

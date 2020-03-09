@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>@todo - The Todo List Manager</title>
+    <link href="./css/fonts/Lexend Exa/css.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/todo_layout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/todo_style.css" />
+
+    <script src="./js/TodoList.js"></script>
+    <script src="./js/TodoConstants.js"></script>
+    <script src="./js/TodoListController.js"></script>
+    <script src="./js/TodoListItem.js"></script>
+    <script src="./js/TodoListModel.js"></script>
+    <script src="./js/TodoListView.js"></script>
+
+    <!-- FOR TESTING OUR TODO LISTS -->
+    <script src="./test/TodoListTester.js"></script>
+
+    <script>
+        window.onload = function () {
+            window.todo = new TodoList();
+            window.todo.view = new TodoListView();
+            window.todo.model = new TodoListModel(window.todo.view);
+            window.todo.controller = new TodoListController(window.todo.model);
+            window.todoListTester = new TodoListTester();
+            window.todoListTester.runTests()
+        }
+    </script>
+</head>
+
+<body style = "font-family:lexend exa;">
+    <div id="todo_home">
+        <div id="home_your_lists_container">
+            <h3 id="home_your_lists_heading">Your Lists</h3>
+            <div id="home_your_lists_list">
+            </div>
+        </div>
+        <div id="home_banner_container">
+            @todo<br />
+            List Maker
+        </div>
+        <div id="home_new_list_container">
+            <button id="home_new_list_button" >Create a New To Do
+                List</button>
+        </div>
+    </div>
+
+    <div id="todo_list" hidden>
+        <div id="list_heading">@todo</div>
+        <div id="list_trash">
+            <span>
+                &#x1F5D1
+            </span>
+        </div>
+        <div id="list_details_container">
+            <div id="list_details_name_container" class="text_toolbar">
+                <span id="list_name_prompt">Name:</span>
+                <input type="text" id="list_name_textfield" />
+            </div>
+            <div id="list_details_owner_container" class="text_toolbar">
+                <span id="list_owner_prompt">Owner:</span>
+                <input type="text" id="list_owner_textfield" />
+            </div>
+        </div>
+        <div id="list_items_container">
+        </div>
+        <br>
+        <div id="list_new_item_div">
+            <img id="list_new_item_button" src="images/icons/AddItem.png">
+        </div>
+        <br>
+    </div>
+
+    <div id="todo_list_edit" hidden>
+        <h3 id="todo_list_edit_heading">Item</h3>
+        <div id="todo_list_edit_container">
+            <div id="item_description_prompt">
+                Description:
+            </div>
+            <input type="text" id="item_description_textfield" />
+
+            <div id="item_assigned_to_prompt">
+                Assignted To:
+            </div>
+            <input type="text" id="item_assigned_to_textfield" />
+
+            <div id="item_due_date_prompt">
+                Due Date:
+            </div>
+            <input type="date" id="item_due_date_picker" />
+
+            <div id="item_completed_prompt">
+                Completed:
+            </div>
+            <span>
+                <input type="checkbox" id="item_completed_checkbox" />
+            </span>
+        </div>
+        <br>
+        <div>
+            <button id="list_edit_submit_button">Submit</button>
+            <button id="list_edit_cancel_button">Cancel</button>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="list_modal" class="modal">
+
+        <!-- Modal content -->
+        <div id="slider" class="modal-content">
+          <div class="modal-body">
+            <p class="modal_texts">Delete list?</p>
+            <br>
+            <br>
+            <p class="modal_texts" style="font-weight:bold">Are you sure you want to delete this list?</p>
+            <br>
+            <span id="delete_buttons_span">
+                <button id="modal_yes" class="delete_buttons">Yes</button>
+                <button id="modal_no" class="delete_buttons">No</button>
+            </span>
+            <br>
+            <p class="modal_texts">The list will not be retreivable.</p>
+          </div>
+        </div>
+      
+    </div>
+</body>
+
+</html>
